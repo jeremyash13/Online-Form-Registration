@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.body-wrapper {
+  /* border: solid 1px red; */
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  /* border: solid 1px red; */
+  width: 100%;
+  background-color: rgba(0,15,30,.8);
+  padding: 7px 0;
+}
+
+.banner {
+  margin: auto;
+  color: white;
+}
+
+.input-title {
+  display: block;
+}

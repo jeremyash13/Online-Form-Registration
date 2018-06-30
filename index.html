@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Registration Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="styles.css" rel="stylesheet"
+</head>
+
+<body>
+  <div class="flex body-wrapper">
+    <header class="flex header">
+      <h1 class="banner">The Code Review</h1>
+    </header>
+    <h2>Signup for our newsletter</h2>
+    <p>
+      Get the latest news on how your code is doing right in your inbox
+    </p>
+
+    <h2>Contact Information</h2>
+    <div class="flex contact-wrapper">
+      <form action="" id="personal-info-form">
+        <span class="input-title">Full Name</span>
+        <input type="text" name="fullname" placeholder="Required"/> <br />
+
+        <span class="input-title">Email Address</span>
+        <input type="email" name="email" placeholder="Required"/> <br />
+
+        <span class="input-title">Phone Number</span>
+        <input type="tel" name="phone"/> <br />
+
+        <span class="input-title">Street Address</span>
+        <input type="text" name="address"/> <br />
+
+        <span class="input-title">City</span>
+        <input type="text" name="city"/> <br />
+
+        <span class="input-title">State</span>
+        <select type="" name="state" placeholder="Choose State">
+          <option value="Alabama">Alabama</option>
+
+        </select> <br />
+
+        <span class="input-title">Zip Code</span>
+        <input type="text" name="zip"/>
+      </form>
+    </div>
+
+  <h2>Newsletter</h2>
+  <p>
+    Select the newsletters you would like to receive
+  </p>
+
+  <form action="" id="newsletter-type-form">
+    <input type="checkbox" name="news-type" /> HTML News <br />
+    <input type="checkbox" name="news-type"/> CSS News <br />
+    <input type="checkbox" name="news-type"/> Javascript News <br />
+  </form>
+
+  <form action="" id="newsletter-format-form">
+    <input type="radio" name="news-format" value="html" /> HTML <br />
+    <input type="radio" name="news-format" value="plain-text"/> Plain text <br />
+  </form>
+
+  <p> Other topics you'd like to hear about </p>
+  <textarea name="feedback">
+
+  </textarea> <br />
+
+  <input action="" type="submit" value="Sign Up"/>
+
+
+
+
+
+    <footer>
+      <p>
+        Copyright The Code Review
+      </p>
+    </footer>
+  </div>
+</body>
+
+</html>
