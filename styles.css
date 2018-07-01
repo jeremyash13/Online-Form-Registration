@@ -4,6 +4,12 @@
   margin: 0;
 }
 
+p, h1, h2, .input-title,
+#newsletter-type-form,
+#newsletter-format-form {
+  color: #2d3945;
+}
+
 .flex {
   display: flex;
 }
@@ -12,12 +18,14 @@
   /* border: solid 1px red; */
   flex-direction: column;
   align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .header {
   /* border: solid 1px red; */
   width: 100%;
-  background-color: rgba(0,15,30,.8);
+  background-color: #2d3945;
   padding: 7px 0;
 }
 
@@ -26,6 +34,61 @@
   color: white;
 }
 
+.intro-section {
+  border-bottom: solid 3px #2d3945;
+  margin-bottom: 1px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.newsletter-section {
+  border-top: solid 2px #2d3945;
+  margin-top: 20px;
+  padding-top: 15px;
+}
+
+.newsletter-sectiion > h2 {
+  margin-bottom: 20px;
+}
+
+.contact-wrapper {
+  width: 100%;
+  border-top: solid 2px #2d3945;
+  flex-direction: column;
+}
+
+#personal-info-form > input,
+#personal-info-form > select {
+  background-color: rgba(0,0,0,.1);
+  padding: 10px 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 0;
+  border-radius: 2px;
+  width: 100%;
+}
+
+#personal-info-form > span {
+  padding-bottom: 6px;
+  margin-top: 12px;
+}
+
 .input-title {
   display: block;
+}
+
+.textarea {
+  width: 100%;
+  border: 0;
+  background-color: rgba(0,0,0,.1);
+  border-radius: 2px;
+}
+
+.signup-btn {
+  background-color: #4ebbb5;
+  border: 0;
+  border-radius: 2px;
+  width: 100%;
+  padding: 10px 0;
 }

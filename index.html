@@ -7,17 +7,21 @@
 </head>
 
 <body>
-  <div class="flex body-wrapper">
-    <header class="flex header">
-      <h1 class="banner">The Code Review</h1>
-    </header>
-    <h2>Signup for our newsletter</h2>
-    <p>
-      Get the latest news on how your code is doing right in your inbox
-    </p>
 
+  <header class="flex header">
+    <h1 class="banner">The Code Review</h1>
+  </header>
+  <div class="flex body-wrapper">
+    <div class="intro-section">
+      <h2>Signup for our newsletter</h2>
+      <p>
+        Get the latest news on how your code is doing right in your inbox
+      </p>
+    </div>
+
+
+  <div class="flex contact-wrapper">
     <h2>Contact Information</h2>
-    <div class="flex contact-wrapper">
       <form action="" id="personal-info-form">
         <span class="input-title">Full Name</span>
         <input type="text" name="fullname" placeholder="Required"/> <br />
@@ -36,15 +40,16 @@
 
         <span class="input-title">State</span>
         <select type="" name="state" placeholder="Choose State">
-          <option value="Alabama">Alabama</option>
+          <option value="Choose State">Choose State</option>
 
         </select> <br />
 
         <span class="input-title">Zip Code</span>
         <input type="text" name="zip"/>
       </form>
-    </div>
+  </div>
 
+<div class="newsletter-section">
   <h2>Newsletter</h2>
   <p>
     Select the newsletters you would like to receive
@@ -56,18 +61,21 @@
     <input type="checkbox" name="news-type"/> Javascript News <br />
   </form>
 
+  <p>
+    Newsletter format
+  </p>
   <form action="" id="newsletter-format-form">
     <input type="radio" name="news-format" value="html" /> HTML <br />
     <input type="radio" name="news-format" value="plain-text"/> Plain text <br />
   </form>
 
   <p> Other topics you'd like to hear about </p>
-  <textarea name="feedback">
+  <textarea name="feedback" class="textarea">
 
   </textarea> <br />
 
-  <input action="" type="submit" value="Sign Up"/>
-
+  <input action="" type="submit" value="Sign Up" class="signup-btn"/>
+</div>
 
 
 
