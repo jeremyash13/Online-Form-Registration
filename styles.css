@@ -2,20 +2,16 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-
-p, h1, h2, .input-title,
-#newsletter-type-form,
-#newsletter-format-form {
+  font-family: 'Bree Serif', serif;
   color: #2d3945;
 }
+
 
 .flex {
   display: flex;
 }
 
 .body-wrapper {
-  /* border: solid 1px red; */
   flex-direction: column;
   align-items: center;
   padding-left: 15px;
@@ -23,27 +19,52 @@ p, h1, h2, .input-title,
 }
 
 .header {
-  /* border: solid 1px red; */
   width: 100%;
   background-color: #2d3945;
-  padding: 7px 0;
+  padding: 20px 0;
 }
 
 .banner {
   margin: auto;
+  font-size: 1.35em;
+  font-weight: normal;
+  letter-spacing: 1px;
   color: white;
 }
 
 .intro-section {
   border-bottom: solid 3px #2d3945;
-  margin-bottom: 1px;
+  margin-bottom: 2px;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 40px;
+  width: 100%;
+  max-width: 768px;
+}
+
+h2 {
+  font-size: 1.3em;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.intro-section > p {
+  font-size: .95em;
+  color: rgba(0,0,0,.4);
+  margin-top: 10px;
+}
+
+p,
+#newsletter-format-form > label,
+#newsletter-type-form > label {
+  font-size: .95em;
+  opacity: .8;
 }
 
 .newsletter-section {
   border-top: solid 2px #2d3945;
+  width: 100%;
+  max-width: 768px;
   margin-top: 20px;
   padding-top: 15px;
 }
@@ -54,13 +75,24 @@ p, h1, h2, .input-title,
 
 .contact-wrapper {
   width: 100%;
+  max-width: 768px;
   border-top: solid 2px #2d3945;
   flex-direction: column;
+  padding-top: 25px;
 }
 
-#personal-info-form > input,
-#personal-info-form > select {
+#personal-info-form label {
+  width: 100%;
+}
+
+#personal-info-form {
+  flex-wrap: wrap;
+}
+
+#personal-info-form > label > input,
+#personal-info-form > label > select {
   background-color: rgba(0,0,0,.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,.3) inset;
   padding: 10px 0;
   padding-left: 10px;
   padding-right: 10px;
@@ -69,9 +101,80 @@ p, h1, h2, .input-title,
   width: 100%;
 }
 
-#personal-info-form > span {
+#personal-info-form > label > input:focus,
+#personal-info-form > label > select:focus,
+.textarea:focus {
+  box-shadow: 0 2px 8px rgba(78,187,181,.6) inset;
+  transition-duration: .3s;
+}
+
+#personal-info-form > label > span {
   padding-bottom: 6px;
   margin-top: 12px;
+  opacity: .8;
+}
+
+#personal-info-form label select {
+  color: rgba(0,0,0,.4);
+}
+
+#personal-info-form label input::placeholder {
+  text-align: right;
+  color: rgba(0,0,0,.5);
+}
+
+#newsletter-type-form,
+#newsletter-format-form {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#newsletter-type-form > label:hover,
+#newsletter-format-form > label:hover,
+.signup-btn:hover {
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label::before {
+  font-family: 'Font Awesome 5 Free';
+  content: "\f0c8";
+  font-weight: normal;
+  font-size: 1.2em;
+  margin-right: 5px;
+}
+
+input[type="checkbox"]:checked + label::before {
+  font-family: 'Font Awesome 5 Free';
+  content: "\f14a";
+  font-weight: bold;
+  color: #4ebbb5;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label::before {
+  font-family: 'Font Awesome 5 Free';
+  content: "\f111";
+  font-weight: normal;
+  font-size: 1.2em;
+  margin-right: 5px;
+}
+
+input[type="radio"]:checked + label::before {
+  font-family: 'Font Awesome 5 Free';
+  content: "\f192";
+  font-weight: bold;
+  color: #4ebbb5;
+}
+
+.newsletter-h2 {
+  margin-bottom: 10px;
 }
 
 .input-title {
@@ -82,13 +185,59 @@ p, h1, h2, .input-title,
   width: 100%;
   border: 0;
   background-color: rgba(0,0,0,.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,.3) inset;
   border-radius: 2px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .signup-btn {
+  font-size: 1.4em;
+  color: white;
   background-color: #4ebbb5;
   border: 0;
   border-radius: 2px;
   width: 100%;
   padding: 10px 0;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px -2px rgba(0,0,0,.5);
+}
+
+.signup-btn:hover {
+  background-color: #49ada8;
+  transition: .15s;
+}
+
+footer > p {
+  color: rgba(0,0,0,.3);
+  font-style: italic;
+  font-size: .9em;
+  margin-bottom: 200px;
+}
+
+@media (min-width:768px) {
+  #personal-info-form label {
+    /* display: inline-block; */
+    flex-direction: row;
+    border: solid 1px red;
+  }
+
+  #personal-info-form {
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+  }
+
+  #personal-info-form > label > input,
+  #personal-info-form > label > select {
+    width: auto;
+    /* flex: 2; */
+  }
+
+  .input-title {
+    /* display: inline-block; */
+    width: auto;
+    /* flex: 1; */
+  }
+
 }

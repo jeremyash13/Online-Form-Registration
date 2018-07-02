@@ -1,0 +1,31 @@
+.animate-top {
+  animation-name: animate-top;
+  animation-duration: 10s;
+}
+
+@keyframes animate-top {
+  0% {opacity: 0;}
+  30% {opacity: 1;}
+}
+
+.animate-mid {
+  animation-name: animate-mid;
+  animation-duration: 10s;
+}
+
+@keyframes animate-mid {
+  0% {opacity: 0;}
+  10% {opacity: 0;}
+  40% {opacity: 1;}
+}
+
+.animate-bot {
+  animation-name: animate-bot;
+  animation-duration: 10s;
+}
+
+@keyframes animate-bot {
+  0% {opacity: 0;}
+  20% {opacity: 0;}
+  50% {opacity: 1;}
+}
