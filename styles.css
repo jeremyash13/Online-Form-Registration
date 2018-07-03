@@ -69,8 +69,9 @@ p,
   padding-top: 15px;
 }
 
-.newsletter-sectiion > h2 {
-  margin-bottom: 20px;
+.newsletter-section > h2 {
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .contact-wrapper {
@@ -83,6 +84,7 @@ p,
 
 #personal-info-form label {
   width: 100%;
+  flex-direction: column;
 }
 
 #personal-info-form {
@@ -104,8 +106,7 @@ p,
 #personal-info-form > label > input:focus,
 #personal-info-form > label > select:focus,
 .textarea:focus {
-  box-shadow: 0 2px 8px rgba(78,187,181,.6) inset;
-  transition-duration: .3s;
+  border: solid 2px #2d3945;
 }
 
 #personal-info-form > label > span {
@@ -118,6 +119,10 @@ p,
   color: rgba(0,0,0,.4);
 }
 
+#personal-info-form input[id="zip"] {
+  width: 50%;
+}
+
 #personal-info-form label input::placeholder {
   text-align: right;
   color: rgba(0,0,0,.5);
@@ -125,7 +130,7 @@ p,
 
 #newsletter-type-form,
 #newsletter-format-form {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   margin-top: 10px;
 }
 
@@ -200,7 +205,7 @@ input[type="radio"]:checked + label::before {
   border-radius: 2px;
   width: 100%;
   padding: 10px 0;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   box-shadow: 0 4px 6px -2px rgba(0,0,0,.5);
 }
 
@@ -218,26 +223,22 @@ footer > p {
 
 @media (min-width:768px) {
   #personal-info-form label {
-    /* display: inline-block; */
     flex-direction: row;
-    border: solid 1px red;
+    margin-bottom: 20px;
   }
 
   #personal-info-form {
     flex-direction: column;
-    /* flex-wrap: wrap; */
+    margin-top: 20px;
   }
 
   #personal-info-form > label > input,
   #personal-info-form > label > select {
-    width: auto;
-    /* flex: 2; */
+    width: 80%;
   }
 
   .input-title {
-    /* display: inline-block; */
-    width: auto;
-    /* flex: 1; */
+    width: 20%;
   }
 
 }
