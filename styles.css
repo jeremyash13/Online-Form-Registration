@@ -55,7 +55,6 @@ h2 {
 }
 
 p,
-#newsletter-format-form > label,
 #newsletter-type-form > label {
   font-size: .95em;
   opacity: .8;
@@ -71,7 +70,11 @@ p,
 
 .newsletter-section > h2 {
   margin-top: 10px;
-  margin-bottom: 30px;
+}
+
+.newsletter-section p {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .contact-wrapper {
@@ -106,7 +109,7 @@ p,
 #personal-info-form > label > input:focus,
 #personal-info-form > label > select:focus,
 .textarea:focus {
-  border: solid 2px #2d3945;
+  box-shadow: 0 0px 8px #4ebbb5 inset;
 }
 
 #personal-info-form > label > span {
@@ -128,14 +131,7 @@ p,
   color: rgba(0,0,0,.5);
 }
 
-#newsletter-type-form,
-#newsletter-format-form {
-  margin-bottom: 30px;
-  margin-top: 10px;
-}
-
 #newsletter-type-form > label:hover,
-#newsletter-format-form > label:hover,
 .signup-btn:hover {
   cursor: pointer;
 }
@@ -178,10 +174,6 @@ input[type="radio"]:checked + label::before {
   color: #4ebbb5;
 }
 
-.newsletter-h2 {
-  margin-bottom: 10px;
-}
-
 .input-title {
   display: block;
 }
@@ -193,7 +185,6 @@ input[type="radio"]:checked + label::before {
   box-shadow: 0 2px 6px rgba(0,0,0,.3) inset;
   border-radius: 2px;
   padding: 10px;
-  margin-top: 20px;
   margin-bottom: 30px;
 }
 
