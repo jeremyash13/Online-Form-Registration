@@ -212,6 +212,9 @@ footer > p {
   margin-bottom: 200px;
 }
 
+#zip {
+  max-width: 200px;
+}
 @media (min-width:768px) {
   #personal-info-form label {
     flex-direction: row;
