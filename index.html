@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Online Registration Form</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="styles.css" rel="stylesheet" />
   <link href="animations.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 
@@ -23,9 +24,9 @@
     </div>
 
 
-  <div class="flex contact-wrapper animate-mid">
-    <h2>Contact Information</h2>
-    <form action="" class="flex" id="personal-info-form">
+    <div class="flex contact-wrapper animate-mid">
+      <h2>Contact Information</h2>
+      <form class="flex" id="personal-info-form">
 
         <label for="fullname" class="flex">
           <span class="input-title">Full Name</span>
@@ -63,53 +64,54 @@
           <span class="input-title">Zip Code</span>
           <input type="text" name="zip" id="zip"/>
         </label>
-  </div>
 
-  <div class="newsletter-section animate-bot">
-    <h2 class="newsletter-h2">Newsletter</h2>
-    <p>
-      Select the newsletters you would like to receive
-    </p>
 
-    <div id="newsletter-type-form">
-
-      <input type="checkbox" id="html-news" />
-      <label for="html-news">HTML News</label> <br />
-
-      <input type="checkbox" id="css-news"/>
-      <label for="css-news">CSS News</label> <br />
-
-      <input type="checkbox" id="js-news"/>
-      <label for="js-news">Javascript News</label> <br />
-
+    <div class="newsletter-section animate-bot">
+      <h2 class="newsletter-h2">Newsletter</h2>
       <p>
-        Newsletter format
+        Select the newsletters you would like to receive
       </p>
 
-      <input type="radio" name="news-format" value="html" id="html-radio" />
-      <label for ="html-radio">HTML</label> <br />
+      <div id="newsletter-type-form">
 
-      <input type="radio" name="news-format" value="plain-text" id="plain-text-radio" />
-      <label for="plain-text-radio">Plain text</label> <br />
+        <input type="checkbox" id="html-news" />
+        <label for="html-news">HTML News</label> <br />
+
+        <input type="checkbox" id="css-news" />
+        <label for="css-news">CSS News</label> <br />
+
+        <input type="checkbox" id="js-news" />
+        <label for="js-news">Javascript News</label> <br />
+
+        <p>
+          Newsletter format
+        </p>
+
+        <input type="radio" name="news-format" value="html" id="html-radio" />
+        <label for="html-radio">HTML</label> <br />
+
+        <input type="radio" name="news-format" value="plain-text" id="plain-text-radio" />
+        <label for="plain-text-radio">Plain text</label> <br />
 
 
-      <p> Other topics you'd like to hear about </p>
-      <textarea name="feedback" id="feedback" class="textarea">
+        <p> Other topics you'd like to hear about </p>
+        <textarea name="feedback" id="feedback" class="textarea">
       </textarea> <br />
 
-      <input action="" type="submit" value="Sign Up" class="signup-btn"/>
-    </div>
-  </form>
-</div>
+        <input type="submit" value="Sign Up" class="signup-btn" />
+      </div>
+      </div>
+    </form>
+  </div>
 
 
 
 
-    <footer class="animate-bot">
-      <p>
-        Copyright The Code Review
-      </p>
-    </footer>
+  <footer class="animate-bot">
+    <p>
+      Copyright The Code Review
+    </p>
+  </footer>
   </div>
 </body>
 
